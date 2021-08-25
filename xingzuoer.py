@@ -65,8 +65,8 @@ def tomorrow():
    supei = sel.xpath('//div[@class ="c_main"]/dl/dd/ul/li/text()')[4]
    duanpin= sel.xpath('//div[@class ="c_main"]/dl/dd/ul/li/text()')[5]
 
-   tm20 = "健康指数:" + jiankanzhishu + "幸运颜色:" + luckcoler + "幸运数字:" + lucknum + "速配星座:" + supei + "短评:" + duanpin
-   tm21 = "综合运势:" + today1 + "爱情运势:" + today2 + "事业运势:" + today3 + "财富运势:" + today4 + "健康运势:" + today5
+   tm20="健康指数:"+jiankanzhishu+"  幸运颜色:"+luckcoler+"  幸运数字:"+lucknum+"  速配星座:"+supei+"  短评:"+duanpin
+   tm21="综合运势:"+today1+"  爱情运势:"+today2+"  事业运势:"+today3+"  财富运势:"+today4+"  健康运势:"+today5
 
    requests.packages.urllib3.disable_warnings()
    now_time = datetime.datetime.now()
@@ -86,8 +86,8 @@ def tomorrow():
    supei = sel.xpath('//div[@class ="c_main"]/dl/dd/ul/li/text()')[4]
    duanpin = sel.xpath('//div[@class ="c_main"]/dl/dd/ul/li/text()')[5]
 
-   am20="健康指数:"+jiankanzhishu+"幸运颜色:"+luckcoler+"幸运数字:"+lucknum+"速配星座:"+supei+"短评:"+duanpin
-   am21="综合运势:"+today1+"爱情运势:"+today2+"事业运势:"+today3+"财富运势:"+today4+"健康运势:"+today5
+   am20="健康指数:"+jiankanzhishu+"  幸运颜色:"+luckcoler+"  幸运数字:"+lucknum+"  速配星座:"+supei+"  短评:"+duanpin
+   am21="综合运势:"+today1+"  爱情运势:"+today2+"  事业运势:"+today3+"  财富运势:"+today4+"  健康运势:"+today5
 
 
 
