@@ -12,7 +12,7 @@ def sd():
     now_time = datetime.datetime.now()
     d = datetime.datetime.now().strftime('%Y%m%d')
     tomorrow = (datetime.date.today() + datetime.timedelta(days=1)).strftime("%Y%m%d")
-    with open(file=d+"xinzuo.ics", encoding="utf8", mode="w") as file_object:
+    with open(file="xinzuo.ics", encoding="utf8", mode="w") as file_object:
         start_string = "BEGIN:VCALENDAR\nVERSION:2.0\nCALSCALE:GREGORIAN\nMETHOD:PUBLISH\nX-WR-CALNAME:" \
                        + config.Default.name + "\nX-WR-TIMEZONE:Asia/Shanghai\n" \
                        + "X-WR-CALDESC:"+d+"星座运势\n"
